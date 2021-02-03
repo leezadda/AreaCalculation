@@ -5,25 +5,39 @@
      Spring 2021
      Calculate a figure's area based on the user's input.
 """
-Print(Select a figure from the menu:
-1 - Square
-2 - Rectangle
-3 - Triangle)
+#shows user the menu
+print("Select a figure from the menu:")
+print("1 - Square")
+print("2 - Rectangle")
+print("3 - Triangle")
 
-figureType = input("Enter your selection:")
-sideLength = input("Enter the side length:")
+#ask user for their shape choice
+figureType = int(input("Enter your selection:"))
 
-if rectangle {
-Enter the length of the rectangle: 10
-Enter the width of the rectangle: 20
-}
+if figureType == 1: #asking for square side length
+    side = int(input("Enter the side length:"))
+    square = side*side
+    print("The area of the selected figure is: " + "%.2f" %square)
 
-if trianle{
-Enter the base of the triangle: 3
-Enter the height of the triangle: 7
-}
+elif figureType == 2: #asking for rectangle length/width
+    length = int(input("Enter the length of the rectangle:"))
+    width = int(input("Enter the width of the rectangle:"))
+    rectangle = length * width
+    print("The area of the selected figure is: " + "%.2f" %rectangle)
 
-print("The area of the selected figure is: " + x)
+
+elif figureType == 3: #asking for triangle base/height
+    base = int(input("Enter the base of the triangle:"))
+    height = int(input("Enter the height of the triangle:"))
+    triangle = (base * height)/2
+    print("The area of the selected figure is: " + "%.2f" %triangle)
+
+else:
+    print("Invalid option")
+
+#final output
+#print("The area of the selected figure is: " + "%.2f" %variable_name)
+
 
 
 
